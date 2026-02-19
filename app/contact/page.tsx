@@ -5,45 +5,30 @@ import { WorldClocks } from "@/components/world-clocks";
 
 export const metadata = {
   title: "Contact",
-  description: "Email, timezone context, and the fastest way to start a project with Player Studio.",
+  description:
+    "Get in touch with Player Studio. Timezone context, email, and the fastest way to start a project.",
 };
-
-function mailtoProject() {
-  const subject = encodeURIComponent("Project enquiry");
-  const body = encodeURIComponent(
-    [
-      "Hi Player Studio,",
-      "",
-      "A quick snapshot:",
-      "- Company / product:",
-      "- What you are building:",
-      "- What is not working right now:",
-      "- Timeline (and any immovable dates):",
-      "- Rough budget band:",
-      "- Links (site, app, deck, docs):",
-      "",
-      "Best,",
-    ].join("\n")
-  );
-  return `mailto:${site.email}?subject=${subject}&body=${body}`;
-}
 
 export default function ContactPage() {
   return (
     <section className="section">
       <div className="container">
-        <div className="kicker">Contact</div>
-        <h1 style={{ fontSize: "clamp(40px, 5.4vw, 64px)" }}>Start with a conversation.</h1>
-        <p className="lede">
-          The fastest way to figure out fit is to talk through constraints. Send a short note, or
-          jump straight to an intro call.
+        <h1 style={{ fontSize: "clamp(40px, 5.4vw, 64px)" }}>
+          It&rsquo;s always easier
+          <br />
+          to chat.
+        </h1>
+
+        <h3 style={{ marginTop: 28 }}>Let&rsquo;s talk</h3>
+
+        <p>
+          <a href={`mailto:${site.email}`} style={{ fontSize: 20 }}>
+            {site.email}
+          </a>
         </p>
 
-        <div className="actions" style={{ marginTop: 18 }}>
-          <a className="btn primary" href={mailtoProject()}>
-            Email project details <ArrowUpRightIcon />
-          </a>
-          <a className="btn" href={site.bookingHref}>
+        <div className="actions" style={{ marginTop: 8 }}>
+          <a className="btn primary" href={site.bookingHref}>
             {site.bookingLabel} <ArrowUpRightIcon />
           </a>
         </div>
@@ -52,34 +37,25 @@ export default function ContactPage() {
 
         <div className="split">
           <div>
-            <h2>What helps us respond fast</h2>
-            <ul>
-              <li>A link to the product, docs, or deck (even if it is rough)</li>
-              <li>What you are trying to change: trust, conversion, adoption, retention</li>
-              <li>Any fixed dates (fundraise, mainnet, conference, partner drop)</li>
-              <li>Your internal constraints: bandwidth, approvals, brand debt</li>
-            </ul>
-
-            <div className="hr" />
-
-            <h2>Email</h2>
-            <p style={{ marginBottom: 10 }}>
-              <a href={`mailto:${site.email}`}>{site.email}</a>
-            </p>
-
-            <p className="small" style={{ margin: 0 }}>
-              If you prefer async: include context, links, and a budget band. We will reply with a
-              next step.
-            </p>
+            <WorldClocks />
           </div>
 
           <div style={{ display: "grid", gap: 18 }}>
-            <WorldClocks />
+            <div className="card" style={{ padding: 16 }}>
+              <h3 style={{ marginBottom: 10 }}>What helps us respond fast</h3>
+              <ul>
+                <li>A link to the product, docs, or deck (even rough is fine)</li>
+                <li>What you&rsquo;re trying to change: trust, conversion, adoption, retention</li>
+                <li>Any fixed dates: fundraise, launch, conference, partner announcement</li>
+                <li>Your internal constraints: bandwidth, approvals, brand debt</li>
+              </ul>
+            </div>
+
             <div className="card" style={{ padding: 16 }}>
               <h3 style={{ marginBottom: 10 }}>Project fit</h3>
               <ul>
                 <li>Minimum engagement: 3 weeks</li>
-                <li>Best for: launches, re‑positioning, design systems, product surfaces</li>
+                <li>Best for: launches, repositioning, design systems, product surfaces</li>
                 <li>Not great for: endless rounds of stakeholder theatre</li>
               </ul>
               <div className="hr" />

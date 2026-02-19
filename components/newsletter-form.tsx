@@ -42,7 +42,7 @@ export function NewsletterForm({ compact = false }: { compact?: boolean }) {
       }
 
       setStatus("success");
-      setMessage("You're on. Keep eyes on your inbox for the good stuff.");
+      setMessage("You're on. Keep eyes on your inbox for our most valuable content.");
     } catch (e) {
       setStatus("error");
       setMessage("Could not subscribe. Try again.");

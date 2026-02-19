@@ -1,6 +1,6 @@
 # Player Studio
 
-A sister site concept to characters.agency, tuned for a younger, internet-native audience (crypto, AI, devtools). Dark-first, with a light mode toggle.
+A sister site to [characters.agency](https://www.characters.agency/), built for technology brands that need strategic creative — brand, digital, and campaign. Dark-first, with a light mode toggle.
 
 ## Quick start
 
@@ -27,6 +27,6 @@ If the key is not set, the endpoint returns success (demo mode for internal revi
 
 ## Notes
 
-- Case studies, client names, and metrics are fictional sample content designed for internal review.
+- Case studies, client names, testimonials, and metrics are fictional sample content designed for internal review.
 - Imagery is generated artwork stored in `public/work/**`.
 - Default theme is dark. The toggle stores preference in `localStorage`.
