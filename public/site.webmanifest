@@ -1,0 +1,15 @@
+{
+  "name": "Player Studio",
+  "short_name": "Player",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#0B0B0C",
+  "background_color": "#0B0B0C",
+  "display": "standalone",
+  "start_url": "/"
+}
