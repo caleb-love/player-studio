@@ -26,9 +26,9 @@ export async function POST(request: NextRequest) {
     }
 
     const loops = new LoopsClient(apiKey);
-    const resp: { success: boolean; id?: string; message?: string } = await loops.updateContact(
-      email
-    );
+    const resp: { success: boolean; id?: string; message?: string } = await loops.updateContact({
+      email,
+    });
 
     if (!resp.success) {
       return NextResponse.json(

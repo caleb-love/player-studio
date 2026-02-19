@@ -103,12 +103,6 @@ export function WorkGrid({
             </div>
             <div className="body">
               <div className="tags" aria-label="Tags">
-                <span className="tag">{c.year}</span>
-                {c.sectors.slice(0, 2).map((t) => (
-                  <span key={t} className="tag">
-                    {t}
-                  </span>
-                ))}
                 {c.services.slice(0, 2).map((t) => (
                   <span key={t} className="tag">
                     {t}
@@ -118,7 +112,7 @@ export function WorkGrid({
               <h3>{c.client}</h3>
               <p>{c.summary}</p>
               <span className="small" style={{ marginTop: 4 }}>
-                View case study
+                Check it
               </span>
             </div>
           </Link>

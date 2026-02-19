@@ -4,7 +4,7 @@ import { WorkGrid } from "@/components/work-grid";
 export const metadata = {
   title: "Work",
   description:
-    "Selected work across brand, digital, product surfaces, and launch systems for internet-native teams.",
+    "Selected work across brand, digital, and campaign for technology brands.",
 };
 
 export default function WorkPage() {
@@ -14,10 +14,10 @@ export default function WorkPage() {
   return (
     <section className="section">
       <div className="container">
-        <div className="kicker">Work</div>
-        <h1 style={{ fontSize: "clamp(40px, 5.4vw, 64px)" }}>Proof, not posturing.</h1>
+        <h1 style={{ fontSize: "clamp(40px, 5.4vw, 64px)" }}>Work</h1>
         <p className="lede">
-          Twelve projects across crypto, AI, and adjacent teams. Built to ship, built to scale.
+          Projects that show how our thinking translates into real outcomes across brand, digital,
+          and campaign.
         </p>
 
         <div className="hr" />

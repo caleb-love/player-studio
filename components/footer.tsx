@@ -8,9 +8,10 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <h3 style={{ marginBottom: 8 }}>Join the signal</h3>
+            <h3 style={{ marginBottom: 8 }}>Join the convo</h3>
             <p style={{ marginBottom: 12 }}>
-              Project notes, teardown snippets, and the occasional template. No drip campaigns.
+              You can catch project reviews, case studies, and tips we&rsquo;ve learnt across
+              projects, right in your inbox.
             </p>
             <NewsletterForm />
             <p className="small" style={{ marginTop: 10 }}>

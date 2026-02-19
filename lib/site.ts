@@ -6,5 +6,5 @@ export const site = {
   bookingHref: "mailto:hello@player.studio?subject=Intro%20call%20with%20Player%20Studio",
   bookingLabel: "Start a chat",
   tagline:
-    "A creative studio for crypto, AI, and internet-native teams who need clarity, not noise.",
+    "A strategic creative house for technology brands that need clarity, not noise.",
 } as const;
