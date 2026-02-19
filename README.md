@@ -1,4 +1,4 @@
-# player.studio (Next.js)
+# Player Studio
 
 A sister site concept to characters.agency, tuned for a younger, internet-native audience (crypto, AI, devtools). Dark-first, with a light mode toggle.
 
